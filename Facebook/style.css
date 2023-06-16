@@ -1,0 +1,333 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.container {
+    width: 100%;
+}
+
+/* Day la css header */
+.container header {
+    width: 100%;
+    height: 70px;
+    padding: 5px 20px;
+    display: flex;
+    justify-content: space-between;
+}
+
+header .header-left {
+    width: 50%;
+    display: flex;
+    /* (mặc định khi flex là row) */
+    align-items: center;
+}
+
+.header-left .fa-square-facebook {
+    font-size: 30px;
+    color: #3B3D68;
+    margin-right: 40px;
+}
+
+.main-form input {
+    width: 450px;
+    height: 30px;
+    outline: none;
+    position: relative;
+}
+
+.main-form .fa-magnifying-glass {
+    position: absolute;
+    top: 28px;
+    left: 34%;
+}
+
+header .header-right {
+    width: 50%;
+    display: flex;
+    /* (mặc định khi flex là row) */
+    align-items: center;
+}
+
+.header-right .user {
+    width: 65%;
+    height: 100%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.user .user-avatar {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.user-avatar .img {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    margin-right: 20px;
+}
+
+.img img {
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+
+}
+
+.icon .number {
+    padding: 1px 3px;
+    background-color: gray;
+    color: white;
+    border-radius: 50%;
+    position: absolute;
+    top: 15px;
+    right: 238px;
+}
+
+.icon .number-2 {
+    padding: 1px 3px;
+    background-color: gray;
+    color: white;
+    border-radius: 50%;
+    position: absolute;
+    top: 15px;
+    right: 205px;
+}
+
+.icon .fa-brands,
+.icon .fa-solid {
+    font-size: 22px;
+    margin-left: 15px;
+    color: #E7E7E7;
+}
+
+.icon .fa-facebook-messenger,
+.icon .fa-bell {
+    color: #B0E9F4
+}
+
+.container main {
+    width: 100%;
+
+    display: flex;
+    justify-content: space-between;
+}
+
+main .main-left {
+    width: 15%;
+    height: 100%;
+    border: 1px solid green;
+    padding: 50px 0px 0px 0px;
+    background-color: #F2F2F4;
+    border-right: 2px solid #EAEBEF;
+    box-shadow: 5px 0px 5px 0px rgba(0, 0, 0, 0.75);
+    -webkit-box-shadow: 5px 0px 5px 0px rgba(0, 0, 0, 0.75);
+    -moz-box-shadow: 5px 0px 5px 0px rgba(0, 0, 0, 0.75);
+}
+
+.main-left .left-top ul li {
+    width: 100%;
+    height: 50px;
+    /* border: 1px solid red; */
+    line-height: 40px;
+    list-style: none;
+    font-size: large;
+    font-weight: bold;
+    padding-left: 10px;
+}
+
+.main-left .left-top ul li i {
+    margin-right: 20px
+}
+
+.new-feed {
+    background-color: white;
+}
+
+.new-feed .select {
+    width: 5px;
+    height: 50px;
+    background-color: #656B8E;
+    position: absolute;
+    left: 2px;
+}
+
+.main-left h3 {
+    margin: 20px 10px;
+}
+
+main {
+    background-color: #F7F8FA;
+}
+
+/* Day la main center */
+main .main-center {
+    width: 55%;
+    height: 100%;
+}
+
+.main-center .create-status {
+    width: 100%;
+    margin-top: 30px;
+    box-shadow: 1px 7px 5px -2px rgba(0, 0, 0, 0.75);
+    -webkit-box-shadow: 1px 7px 5px -2px rgba(0, 0, 0, 0.75);
+    -moz-box-shadow: 1px 7px 5px -2px rgba(0, 0, 0, 0.75);
+}
+
+.create-status .main-form {
+    border-bottom: 2px solid rgb(153, 142, 142);
+    position: relative;
+}
+
+.create-status .main-form .img {
+    width: 60px;
+    height: 60px;
+    position: absolute;
+    z-index: 2;
+    top: 25px;
+    left: 25px
+}
+
+.create-status .main-form .img img {
+    width: 100%;
+    height: 100%;
+    border: 1px solid red;
+    padding: 1px;
+
+}
+
+.create-status .main-form form input {
+    width: 100%;
+    height: 100px;
+    padding-left: 100px;
+}
+
+.create-status .option {
+    display: flex;
+    justify-content: space-around;
+    font-size: larger;
+}
+
+.create-status .option .fa-solid,
+.option .fa-image,
+.option .button {
+    margin-right: 10px;
+    color: #36AAE8;
+}
+
+.main-center .post-status {
+    width: 100%;
+    margin: 20px 0;
+    background-color: white;
+    box-shadow: 1px 7px 5px -2px rgba(0, 0, 0, 0.75);
+    -webkit-box-shadow: 1px 7px 5px -2px rgba(0, 0, 0, 0.75);
+    -moz-box-shadow: 1px 7px 5px -2px rgba(0, 0, 0, 0.75);
+}
+
+.post-status .user-post-status {
+    width: 100%;
+    height: 70px;
+    display: flex;
+    justify-content: space-between;
+    padding: 5px 10px;
+}
+
+.user-post-status .user-info {
+    display: flex;
+    width: 20%;
+    justify-content: space-evenly;
+}
+
+.user-info .img {
+    width: 50px;
+    height: 50px;
+}
+
+.user-info .img img {
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+    padding: 1px
+}
+
+.post-status .list-card {
+    width: 100%;
+    height: 180px;
+    margin: 10px 0;
+    padding: 5px 20px;
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.post-status .list-card .card {
+    width: 30%;
+    height: 100%;
+}
+
+.post-status .list-card .card img {
+    width: 100%;
+    height: 100%;
+}
+
+/* Day la main right */
+main .main-right {
+    width: 20%;
+    height: 100%;
+    margin-top: 30px;
+    border: 1px solid green;
+    margin-right: 50px;
+    background-color: white;
+    box-shadow: 1px -2px 29px 1px rgba(0, 0, 0, 0.75);
+    -webkit-box-shadow: 1px -2px 29px 1px rgba(0, 0, 0, 0.75);
+    -moz-box-shadow: 1px -2px 29px 1px rgba(0, 0, 0, 0.75);
+}
+
+.main-right .stories {
+    width: 100%;
+}
+
+.stories .text {
+    display: flex;
+    padding: 5px;
+    justify-content: space-between;
+    font-weight: bold;
+}
+
+.stories .list-avatar {
+    width: 100%;
+    height: 120px;
+    display: flex;
+    align-items: center;
+}
+
+.list-avatar .avatar {
+    width: 100px;
+    height: 60%;
+    border: 2px solid #383A6C;
+    border-radius: 50%;
+    margin: 7px;
+    padding: 2px;
+}
+
+.avatar img {
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+}
+
+.adverstiment .list-card {
+    display: grid;
+    grid-template-columns: 50% 50%;
+    grid-template-rows: 100px 100px;
+    gap: 2%;
+    margin: 10px;
+}
+
+.item-1 {
+    background-image: url(https://vapa.vn/wp-content/uploads/2022/12/anh-3d-thien-nhien-001.jpg);
+    background-size: cover;
+}
